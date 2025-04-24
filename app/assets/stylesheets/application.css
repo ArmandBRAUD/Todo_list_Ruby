@@ -1,0 +1,143 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+/* application.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3490dc;
+  }
+  a:hover {
+    color: #1d68a7;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  /* Header */
+.tasks-header {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  /* Bouton Nouvelle tâche */
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .btn-new {
+    background-color: #3490dc;
+    color: #ffffff;
+  }
+  
+  .btn-new:hover {
+    background-color: #2779bd;
+  }
+  
+  /* Liste de tâches */
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  /* Élément de tâche */
+  .task-item {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #999999;
+  }
+  
+  /* Informations de la tâche */
+  .task-info .task-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .task-info .task-status {
+    display: block;
+    font-size: 0.875rem;
+    color: #7f8c8d;
+  }
+  
+  /* Actions */
+  .task-actions .action {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  
+  .task-actions .view {
+    color: #3490dc;
+  }
+  
+  .task-actions .view:hover {
+    color: #2779bd;
+  }
+  
+  .task-actions .edit {
+    color: #f39c12;
+  }
+  
+  .task-actions .edit:hover {
+    color: #d35400;
+  }
+  
+  .task-actions .delete {
+    color: #e3342f;
+  }
+  
+  .task-actions .delete:hover {
+    color: #cc1f1a;
+  }

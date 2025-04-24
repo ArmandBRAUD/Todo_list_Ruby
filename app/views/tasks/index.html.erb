@@ -1,0 +1,19 @@
+<h1 class="tasks-header">Liste des tâches</h1>
+
+<%= link_to "Nouvelle tâche", new_task_path, class: "btn btn-new" %>
+
+<ul class="task-list">
+  <% @tasks.each do |task| %>
+    <li class="task-item <%= 'completed' if task.completed %>">
+      <div class="task-info">
+        <span class="task-title"><%= task.title %></span>
+        <span class="task-status"><%= task.completed ? 'Terminée' : 'En cours' %></span>
+      </div>
+      <div class="task-actions">
+        <%= link_to 'Voir', task_path(task), class: "action view" %>
+        <%= link_to 'Modifier', edit_task_path(task), class: "action edit" %>
+        <%= link_to 'Supprimer', task_path(task), method: :delete, data: { confirm: "Êtes-vous sûr de vouloir supprimer cette tâche ?" }, class: "action delete" %>
+      </div>
+    </li>
+  <% end %>
+</ul>
